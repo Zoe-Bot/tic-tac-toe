@@ -32,17 +32,10 @@ function draw(field) {
 }
 
 function changePlayer() {
-    if(currentPlayer === 1)
-        currentPlayer = 2;
-    else
-        currentPlayer = 1;
-
-    if(infoPlayer === 1)
-        infoPlayer = 2;
-    else
-        infoPlayer = 1;
-
+    currentPlayer = currentPlayer === 1 ? 2 : 1;
+    infoPlayer = infoPlayer === 1 ? 2 : 1;
 }
+
 
 function checkWinner() {
 
