@@ -25,7 +25,7 @@ function draw(field) {
     changePlayer();
     checkWinner();
 
-    if(win == 1) {
+    if(win == 1 || win == 2) {
         document.getElementById('information').innerHTML = 'Player ' + symbol[winner] + ' hat gewonnen';
     }
 
@@ -71,7 +71,7 @@ function checkWinner() {
         fields[0] == 'O' && fields[4] == 'O' && fields[8] == 'O' ||
         fields[2] == 'O' && fields[4] == 'O' && fields[6] == 'O'
     ) {
-        win = 0;
+        win = 2;
     }
 }
 
